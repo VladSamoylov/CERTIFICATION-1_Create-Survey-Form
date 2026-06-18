@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" description="BuyAIR survey form to improve our service">
+    <meta propetry="og.title" content="BuyAIR Survey Form">
+    <meta property="og.description" content="BuyAIR survey form to improve our service">
+    <meta property="og.image" content="https://unsplash.com/photos/a-close-up-of-a-one-dollar-bill-wTO6MWpMrJk">
+    <meta propert=""og.type content="website">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <center>
+        <h1 id="title">BuyAIR Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the services</p>
+        <form action="#" id="survey-form" method="POST">
+            <fieldset>
+                <legend>Help us become better</legend>
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" name="age" placeholder="Your age" min="0" max="125">
+            </fieldset>
+            <fieldset>
+                <legend>Which option best describes you</legend>
+                <select name="customer-value" id="dropdown">
+                    <option value="red-flag">Your services are not needed</option>
+                    <option value="poor">I am not ready to pay you</option>
+                    <option value="medium-rare">Do I really need your services?</option>
+                    <option value="love-it-man" selected>Shut up and take my money</option>
+                </select>
+                <p>Would you recommend us to a friend?</p>
+                <input type="radio" id="u-best" name="recomendation" value="u-best">
+                <label for="radio">Of course yes!</label>
+                <input type="radio" id="definitely" name="recomendation" value="definitely">
+                <label for="definitely">Definitely</label>
+                <input type="radio" id="poopy" name="recomendation" value="poopy" disabled>
+                <label for="poopy">In no case</label>
+                <p>Whatwould you like to see improved (You can choose as much as you want)</p>
+                <input type="checkbox" id="little" name="improve" value="little">
+                <label for="little">Raise the service fee a little (25%)</label>
+                <input type="checkbox" id="medium" name="improve" value="medium" required>
+                <label for="medium">Raise the service fee a little more (50%)</label>
+                <input type="checkbox" id="not-enough" name="improve" value="not-enough">
+                <label for="not-enough">We want you not to use last year's yacht (300%)</label>
+                <p>Anything else?</p>
+                <textarea name="very-useful-idea" id="opinion" cols="100" rows="10" placeholder="We detectet your IP... SO be kind!"></textarea>
+                <br>
+                <button id="submit" type="submit">Submit</button>
+                <button id="reset" type="reset">Reset</button>
+            </fieldset>
+        </form>
+    </center>
+  </body>
+</html>
